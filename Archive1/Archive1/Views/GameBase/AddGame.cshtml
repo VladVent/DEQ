@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Додавання нової Гри";
+}
+@model GameRepository
+<h3> Додати гру.</h3>
+@if (Model != null)
+{
+    <div class="alert alert-success" role="alert">@Model</div>
+}
+    <form method="post" asp-controller="GameController" asp-action="AddGame">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Назва гри:</label>
+            <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="inputDecription">Синопсис:</label>
+            <input type="text" name=" gameDescr" class="form-control" id="inputDecription" placeholder="Синопсис">
+        </div>
+        <div class="form-group">
+            <label for="inputGenre">Жанр:</label>
+            <input type="text" name="gameGenre" class="form-control" id="inputGenre" placeholder="Жанр">
+        </div> <div class="form-group">
+            <label for="inputDate">Дата випуску:</label>
+            <input type="text" name="dateCreate" class="form-control" id="inputDate" placeholder="Дата випуску">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Додати Гру</button>
+    </form>
+

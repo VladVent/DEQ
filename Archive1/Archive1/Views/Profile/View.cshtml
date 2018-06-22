@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+@model IEnumerable<database.DataModel.Game>
+
+<h3>
+    @ViewData["name"]
+</h3>
+@foreach (var elem in Model)
+{
+
+    <h4>Ігри розробника @elem.GameDev.Name </h4>
+
+}
+<br />
+@{ bool attends = false;
+}
+@if (User?.Identity?.IsAuthenticated ?? false)
+{
+    @if (User.IsInRole("Admin") && ViewData["role"].ToString() == "Admin")
+    {
+        <a asp-controller="Admin" asp-action="SetTeacher" asp-route-name="@ViewData["username"]" class="btn btn-warning" style="float:left;margin-right:5px;">Додати гру</a> <br />
+    }
+}
+<hr />
+@foreach (var elem in Model)
+{
+    attends = true;
+    <div class="panel panel-default">
+        <div class="panel-heading"><a asp-controller="Game" asp-action="ViewGame" asp-route-id="@elem.Id">@elem.Name</a></div>
+        <div class="panel-body">
+            @elem.Genre @elem.GamePub @elem.Description
+            <a href="~/Views/Home/Index.cshtml">~/Views/Home/Index.cshtml</a>
+
+            <a asp-controller="Game" asp-action="ViewGame" asp-route-id="@elem.Id" class="btn btn-primary" style="float:right;margin-right:10px;"></a>
+            <br>
+        </div>
+    </div>
+
+}
+@if (!attends)
+{
+    <div class="alert-info">
+        <p>
+            Користувач ще не @if (ViewData["role"].ToString() == "Users")
+            {<span> Зареєструватися </span>}
+        </p>
+    </div>
+}
+@if (ViewData["role"].ToString() == "Users")
+{
+    <a asp-controller="Users" asp-action="ViewGame" asp-route-name="@ViewData["username"]" class="btn btn-warning" style="float:left;margin-right:10px;"></a> <br />
+}

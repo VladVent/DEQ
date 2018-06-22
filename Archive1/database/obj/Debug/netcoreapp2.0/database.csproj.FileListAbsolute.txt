@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Archive1\database\bin\Debug\netcoreapp2.0\database.deps.json
+C:\Users\User\source\repos\Archive1\database\bin\Debug\netcoreapp2.0\database.runtimeconfig.json
+C:\Users\User\source\repos\Archive1\database\bin\Debug\netcoreapp2.0\database.runtimeconfig.dev.json
+C:\Users\User\source\repos\Archive1\database\bin\Debug\netcoreapp2.0\database.dll
+C:\Users\User\source\repos\Archive1\database\obj\Debug\netcoreapp2.0\database.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Archive1\database\obj\Debug\netcoreapp2.0\database.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Archive1\database\obj\Debug\netcoreapp2.0\database.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Archive1\database\obj\Debug\netcoreapp2.0\database.AssemblyInfo.cs
+C:\Users\User\source\repos\Archive1\database\bin\Debug\netcoreapp2.0\database.pdb
+C:\Users\User\source\repos\Archive1\database\obj\Debug\netcoreapp2.0\database.dll
+C:\Users\User\source\repos\Archive1\database\obj\Debug\netcoreapp2.0\database.pdb

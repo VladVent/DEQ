@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\Archive1.deps.json
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\Archive1.runtimeconfig.json
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\Archive1.runtimeconfig.dev.json
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\Archive1.dll
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\Archive1.pdb
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.AssemblyInfo.cs
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.dll
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.pdb
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\database.dll
+C:\Users\User\source\repos\Archive1\Archive1\bin\Debug\netcoreapp2.0\database.pdb
+C:\Users\User\source\repos\Archive1\Archive1\obj\Debug\netcoreapp2.0\Archive1.csproj.CopyComplete

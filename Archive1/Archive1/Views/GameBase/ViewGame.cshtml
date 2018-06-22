@@ -1,0 +1,11 @@
+﻿@using database.DataModel
+@model Game
+@{
+    ViewData["Title"] = "Ігри -" + Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h3>
+    @Model.Name <span style="float:right;">Розробник: <a asp-controller="Profile" asp-action="View" asp-route-name="@Model.GameDev.Name">@Model.GameDev.Name</a></span>
+</h3>
+<hr />
+<hr />

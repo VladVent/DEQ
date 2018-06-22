@@ -1,0 +1,30 @@
+﻿@using database.DataModel
+@model HomeGameViewModel
+@{
+    ViewData["Title"] = "Головна сторінка";
+}
+<h3>
+   @if (User?.IsInRole("Admin") ?? true)
+    {
+       <a asp-controller="GameBase" asp-action="AddGame" class="btn btn-success" style="float:right;margin-right:25px;">Додати нову гру</a>          
+   }
+</h3>
+<hr />
+@foreach (var elem in Model.Game)
+{
+    <div class="panel panel-default">
+        <div class="panel-heading"><a asp-controller="Game" asp-action="ViewGame" asp-route-id="@elem.CurrentGame.Id">@elem.CurrentGame.Name</a></div>
+        <div class="panel-body">
+            @elem.CurrentGame.Name
+
+            <br>
+            <img src="@elem.CurrentGame.Img" />
+            <b>Видавець:</b> <a asp-controller="Profile" asp-action="View" asp-route-name="@elem.CurrentGame.GameDev.Name"><span style="font-size: 12px;color: black;">@elem.CurrentGame.GamePub.Name</span></a>
+            <b>Розробник:</b> <a asp-controller="Profile" asp-action="View" asp-route-name="@elem.CurrentGame.GameDev.Name"><span style="font-size: 12px;color: black;">@elem.CurrentGame.GameDev.Name</span></a>
+           @* <b>Жанр:</b> <a asp-controller="Profile" asp-action="View" asp-route-name="@elem.CurrentGame.Gen.Name"><span style="font-size: 12px;color: black;">@elem.CurrentGame.Gen.Name</span></a>*@
+            <b style="margin-left:5%;">Рік випуску:</b> <span style="font-size: 12px;color: black;">@elem.CurrentGame.DateCreate</span>
+            <br />
+            <b></b><span style="font-size: 12px;color: black;">@elem.CurrentGame.Description</span>
+        </div>
+    </div>
+}
